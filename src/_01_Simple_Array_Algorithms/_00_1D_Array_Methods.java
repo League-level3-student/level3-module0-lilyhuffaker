@@ -28,17 +28,19 @@ public class _00_1D_Array_Methods {
 			if(value == array[i]) {
 				return true;
 			}
-			else {
-				return false;
-			}
 		}
+		return false;
 	}
 	
 	//4. Complete the method so that it returns the index of the,
 	//   first instance that the specified value occurs in the array.
 	//   If the array does not contain the specified value, it should return -1.
 	public static int getIndex(int[] arr, int value) {
-		
-		return 0;
+		for (int i = 0; i < arr.length; i++) {
+			if(value == arr[i]) {
+				return i;
+			}
+		}
+		return -1;
 	}
 }
